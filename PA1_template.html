@@ -250,6 +250,26 @@ nrow(dfa3)
 <pre><code>## [1] 2304
 </code></pre>
 
+<pre><code class="r">for (i in which(sapply(data1, is.numeric))) {data1[is.na(dd[,i]),i] &lt;- mean(data1[,i], na.rm = TRUE)}
+</code></pre>
+
+<pre><code>## Error in `[&lt;-.data.frame`(`*tmp*`, is.na(dd[, i]), i, value = 37.3825995807128): object &#39;dd&#39; not found
+</code></pre>
+
+<pre><code class="r">dfa4 &lt;- aggregate(steps ~ date, data = data1, FUN = sum)
+
+mean(dfa4$steps)
+</code></pre>
+
+<pre><code>## [1] 10766.19
+</code></pre>
+
+<pre><code class="r">median(dfa4$steps)
+</code></pre>
+
+<pre><code>## [1] 10765
+</code></pre>
+
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
 
 </body>

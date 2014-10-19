@@ -85,5 +85,31 @@ nrow(dfa3)
 ## [1] 2304
 ```
 
+```r
+for (i in which(sapply(data1, is.numeric))) {data1[is.na(dd[,i]),i] <- mean(data1[,i], na.rm = TRUE)}
+```
+
+```
+## Error in `[<-.data.frame`(`*tmp*`, is.na(dd[, i]), i, value = 37.3825995807128): object 'dd' not found
+```
+
+```r
+dfa4 <- aggregate(steps ~ date, data = data1, FUN = sum)
+
+mean(dfa4$steps)
+```
+
+```
+## [1] 10766.19
+```
+
+```r
+median(dfa4$steps)
+```
+
+```
+## [1] 10765
+```
+
 ## Are there differences in activity patterns between weekdays and weekends?
 
