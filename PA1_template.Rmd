@@ -26,9 +26,12 @@ median(dfa$steps)
 
 ## What is the average daily activity pattern?
 ```{r echo = TRUE}
+dfa2 <- aggregate(steps ~ interval, data = data1, FUN = mean)
+require(ggplot2)
+ggplot(data = dfa2, aes(interval, steps)) + geom_line()
 ```
 
-## Imputing missing values
+ values
 ```{r echo = TRUE}
 ```
 

@@ -50,8 +50,22 @@ median(dfa$steps)
 
 ## What is the average daily activity pattern?
 
+```r
+dfa2 <- aggregate(steps ~ interval, data = data1, FUN = mean)
+require(ggplot2)
+```
 
-## Imputing missing values
+```
+## Loading required package: ggplot2
+```
+
+```r
+ggplot(data = dfa2, aes(interval, steps)) + geom_line()
+```
+
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
+
+ values
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
