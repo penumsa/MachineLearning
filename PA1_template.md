@@ -74,8 +74,16 @@ dfa2[max(dfa2$steps), ]
 ## 206     1705 56.30189
 ```
 
+## Imputing missing values
 
+```r
+dfa3 <- subset(data1, is.na(steps))
+nrow(dfa3)
+```
 
+```
+## [1] 2304
+```
 
 ## Are there differences in activity patterns between weekdays and weekends?
 

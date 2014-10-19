@@ -32,6 +32,13 @@ ggplot(data = dfa2, aes(interval, steps)) + geom_line()
 dfa2[max(dfa2$steps), ]
 ```
 
+## Imputing missing values
+```{r echo = TRUE}
+dfa3 <- subset(data1, is.na(steps))
+nrow(dfa3)
+```
+
 ## Are there differences in activity patterns between weekdays and weekends?
 ```{r echo = TRUE}
+
 ```
