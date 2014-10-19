@@ -65,6 +65,15 @@ ggplot(data = dfa2, aes(interval, steps)) + geom_line()
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
+```r
+dfa2[max(dfa2$steps), ]
+```
+
+```
+##     interval    steps
+## 206     1705 56.30189
+```
+
  values
 
 
