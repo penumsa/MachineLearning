@@ -74,7 +74,7 @@ dfa2[max(dfa2$steps), ]
 ## 206     1705 56.30189
 ```
 
- values
+
 
 
 ## Are there differences in activity patterns between weekdays and weekends?

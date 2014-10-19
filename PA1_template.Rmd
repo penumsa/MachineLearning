@@ -32,10 +32,6 @@ ggplot(data = dfa2, aes(interval, steps)) + geom_line()
 dfa2[max(dfa2$steps), ]
 ```
 
-
-```{r echo = TRUE}
-```
-
 ## Are there differences in activity patterns between weekdays and weekends?
 ```{r echo = TRUE}
 ```
