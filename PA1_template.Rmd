@@ -19,7 +19,7 @@ data1 <- read.csv(ActFile, header = TRUE, stringsAsFactors = FALSE)
 ## What is mean total number of steps taken per day?
 ```{r echo = TRUE}
 dfa <- aggregate(steps ~ date, data = data1, FUN = sum)
-hist(dfa$steps, col = "red")
+hist(dfa$steps, col = "red", main = "Total number of steps taken each day", xlab = "Steps")
 mean(dfa$steps)
 median(dfa$steps)
 ```

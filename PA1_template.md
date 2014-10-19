@@ -27,7 +27,7 @@ data1 <- read.csv(ActFile, header = TRUE, stringsAsFactors = FALSE)
 
 ```r
 dfa <- aggregate(steps ~ date, data = data1, FUN = sum)
-hist(dfa$steps, col = "red")
+hist(dfa$steps, col = "red", main = "Total number of steps taken each day", xlab = "Steps")
 ```
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
