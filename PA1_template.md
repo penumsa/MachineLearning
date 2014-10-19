@@ -95,7 +95,12 @@ for (i in which(sapply(data1, is.numeric))) {data1[is.na(dd[,i]),i] <- mean(data
 
 ```r
 dfa4 <- aggregate(steps ~ date, data = data1, FUN = sum)
+hist(dfa4$steps, col = "red", main = "Total number of steps taken each day", xlab = "Steps")
+```
 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+
+```r
 mean(dfa4$steps)
 ```
 
