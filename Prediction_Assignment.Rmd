@@ -29,8 +29,6 @@ The data for this project come from this source: http://groupware.les.inf.puc-ri
 ---
 ****Load the training and test data sets
 ```{r, echo=TRUE}
-install.packages("caret")
-install.packages("corrplot")
 library(corrplot)
 library(caret)
 setwd("C:\\Penumarthy\\SastryFolder\\Coursera\\Data Science\\Machine Learning")
